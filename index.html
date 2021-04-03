@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Boxes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="controlls">
+        <div id="vertical-wrapper" class="control-div">
+            <label for="vertical-slider">Postion Y</label>
+            <div class="elements-wrapper vertical">
+                <input type="range" min="0" max="600" value="0" id="vertical-slider">
+                <div class="span-wrapper wrap-vertical">
+                    <span>0</span>
+                    <span>600</span>
+                </div>                
+            </div>
+    </div>
+    <div id="horizontal-wrapper" class="control-div">
+        <label for="position-horizontal">Postion X</label>
+        <div class="elements-wrapper horizontal">
+            <div class="span-wrapper span-horiz">
+                <span>0</span>
+                <span>800</span>
+            </div>                
+            <input type="range" min="0" max="800" value="0" id="position-horizontal" class="slider-horizontal">
+        </div>
+    </div>
+    <div id="size-wrapper" class="control-div">
+        <label for="size-slider">Size</label>
+        <div class="elements-wrapper horizontal">
+            <div class="span-wrapper span-horiz">
+                <span>0</span>
+                <span>2</span>
+            </div>       
+            <input type="range" min="0" max="2" step="0.100" value="1" id="size-slider" class="slider-horizontal" >         
+        </div>
+    </div>
+    <div id="opacity" class="control-div">
+        <label for="opacity-slider">Opacity</label>
+        <div class="elements-wrapper horizontal">
+            <div class="span-wrapper span-horiz">
+                <span>0</span>
+                <span>1</span>
+            </div>                
+            <input type="range" min="0" max="1" step="0.100" value="1" id="opacity-slider" class="slider-horizontal">
+        </div>
+    </div>
+    <div id="shape-type" class="control-div">
+        <label for="shape">Shape</label>
+        <div class="elements-wrapper horizontal">
+            <select name="shape" id="shape">
+                <option value="square">Square</option>
+                <option vlaue="circle">Circle</option>
+                <option vlaue="rombus">Rombus</option>
+            </select>
+            <button type="submit" id='shape-button'>OK</button>
+        </div>
+    </div>
+    <div id="hex-color" class="control-div">
+        <p>HEX</p>
+        <div class="elements-wrapper vertical">
+            <label for="hex">#</label>
+            <input type="text" id="hex" class="input-field">    
+        </div>
+    </div>
+    <div id="rgba-color" class="control-div">
+        <p>RGBA</p>
+        <div class="elements-wrapper horizontal">
+            <div class="elements-wrapper vertical">
+                <input type="range" min="0" max="255" id="red" value="255">
+                <label for="red">r</label>
+            </div>
+            <div class="elements-wrapper vertical">
+                <input type="range" min="0" id="green" max="255" value="0">
+                <label for="green">g</label>
+            </div>
+            <div class="elements-wrapper vertical">
+                <input type="range" id="blue" min="0" max="255" value="0">
+                <label for="blue">b</label>
+            </div>
+            <div class="elements-wrapper vertical">
+                <input type="range" id="alpha" min="0" max="1" step="0.10" value="1">
+                <label for="alpha">a</label>
+            </div>        
+        </div>
+    </div>
+    </div>
+    <div id="controlled-box"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>
